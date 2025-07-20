@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+  <!--HEADER PART-->
+<head>
+    <title>Home</title>
+    <meta name="author" content="group1">
+    <meta charset="8">
+    <meta name="description" content="HTML5, CSS3 and JavaScript">
+    <link rel="stylesheet" href="STYLE.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--INTENRAL CSS HERE-->
+    <style>
+
+     .photo{
+        width: 30%;
+     }
+     .row1{
+        display: flex;
+        justify-content:space-evenly ;
+        padding: 30px;
+     }
+     .row2{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 30px;
+     }
+     
+     .slider 
+      {
+      width: 800;
+      height: 450;
+      margin: 20px auto;
+      box-sizing: border-box;
+      overflow: hidden;
+      box-shadow: 5px 5px 10px grey;
+      }
+      .photo2{
+        
+        box-shadow: 20px 20px gray;
+      }
+      .photo1{
+        box-shadow: -20px -20px gray;
+      }    
+ </style>
+
+</head>
+
+<body>
+   <!--Navigation bar SECTION-->
+   <nav>
+    <div class="apple">
+        <a href="home.html" >
+             <img src="images/HOME/logo_transparent.png" class="logo" width="30%" height="110">
+        </a>
+    </div>
+  
+    <div class="navigation">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Product.html">Product</a> </li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="Research.html">Research</a></li>
+        </ul>
+    </div>
+    <form>
+        <div class="search">
+            <span class="fa-solid fa-magnifying-glass"></span>
+            <input class="s-input" type="search" placeholder="Search">
+    </div>
+</form>
+</nav>
+ 
+<!--Image Slider part for home page and some text-->
+    <div class="slider">
+        <div id="img">
+          <img src="images/HOME/T2.png">
+        </div>
+      </div>
+        <h4 style="text-align: center;">In 2019, we started off as the first local online shop in Nepal. Over the years, we have <br>diversified from a small online shop to an enterprise franchising the Nepali local brands,<br> nationally and internationally.<br>
+            <section class="contain">
+                <a href="About.html">
+                    <button>
+                        Learn more ➞
+                           </button>     </a>
+               </section>
+        </h4>
+<!--Body main section here-->>
+        <section class="row1">
+         <img class="photo1" src="images/HOME/row left.png" alt="left photo" width="400" height="400">
+<br><br>
+           <div class="right_t">
+           <p><h1><ins>The Journey from <br>Shop to Shop</ins></h1> Advanced in tech and store </p>
+           <a href="blog.html">
+            <button>
+                Learn more ➞
+                   </button>     </a>
+            </div>
+         </section>
+<!--body section two here-->
+    <section class="row2">
+        <div class="left_t">
+            <p><h1><ins>Buy Online</ins></h1>Home made and collected from<br> legit local shops all over from Nepal  </p>
+            <a href="Product.html">
+             <button>
+                 Learn more ➞
+                    </button>     </a>
+             </div>
+       
+<br><br> <img class="photo2" src="images/HOME/right row.jpg" alt="left photo"  width="400" height="400">
+        </section>
+
+<!--footer section here-->
+<footer>
+  <div class="footer-here">
+    <p style="text-align: center;">©️ 2024 Sacho Basket Nepal, Inc. </p>
+    <!--prints the date-->
+    <p id="date"></p> 
+ <ul>
+  <li><a href="home.html">Your privacy|</a></li>
+  <li><a href="form.html">Form</a></li>
+  <li><a href="Research.html">|Research</a></li>
+ </ul>
+
+<script type="text/javascript">
+  //javascript for current time by creating display function
+    function display_date() 
+{
+          //gets current time
+  document.getElementById('date').innerHTML = Date();
+  setTimeout(display_date,1000)
+}
+
+     
+   display_date();
+   
+
+</script>
+
+</div>
+</footer>
+ 
+    <script>
+        var images = ['images/HOME/T1.png','images/HOME/T2.png'];
+    
+        var x = 0;
+        var imgs = document.getElementById('img');
+        //The setInterval() calls a function at theintervals (in milliseconds). 
+        setInterval(slider, 3000);
+    
+        function slider() {
+    //if else statement
+          if (x < images.length) 
+            {
+            x = x + 1;
+            } 
+    
+          else 
+            {
+            x = 1;
+            }
+    
+    
+          imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+        }
+      </script>
+   
+   
+</body>
+
+</html>

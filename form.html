@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+     <!--HEADER PART-->
+    <head>
+        <title>Form validation</title>
+        <meta charset="8">
+        <meta name="Amit" content="form">
+        <meta name="description" content="HTML5, CSS3 and JavaScript">
+        <link rel="stylesheet" href="STYLE.css">
+        <style>
+          .box{
+            display: block;
+            margin: 10px;
+            padding: 10px;
+          border: 3px solid black;
+          
+          }
+       
+        </style>
+    </head>
+
+    <body>
+       <!--Navigation bar SECTION-->
+   <nav>
+    <div class="apple">
+        <a href="home.html" >
+             <img src="images/HOME/logo_transparent.png" class="logo" width="30%" height="110">
+        </a>
+    </div>
+  
+    <div class="navigation">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Product.html">Product</a> </li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="Research.html">Research</a></li>
+        </ul>
+    </div>
+    <form>
+        <div class="search">
+            <span class="fa-solid fa-magnifying-glass"></span>
+            <input class="s-input" type="search" placeholder="Search">
+    </div>
+</form>
+</nav>
+<!--main body section-->
+        <form class="box" name="messageForm" onsubmit="validateForm()">
+            <label>First Name: </label>
+            <input type="text" name="fname">
+            <br>
+            <br>
+
+            <label>Last Name: </label>
+            <input type="text" name="lname">
+            <br>
+            <br>
+
+            <label>Gender: </label>
+            <input type="radio" name="genderDetails" value="male" checked>Male
+            <input type="radio" name="genderDetails" value="female">Female
+            <br>
+            <br>
+
+            <label>Message:</label>
+            <br>
+            <textarea rows="10" cols="25" name="message" placeholder="Enter your message"></textarea>
+            <br>
+            <br>
+
+            <input type="submit" value="Submit Button">
+        </form>
+<!--Opening table section-->
+<h2>Opening Time</h2>
+<table bgcolor="black" width="700">
+<tr bgcolor="grey">
+
+    <th>Sunday</th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
+    <th>Saturday</th>
+</tr>
+<tr bgcolor="lightgrey" align="center">
+    <td>Closed</td>
+    <td>8-9</td>
+    <td>8-9</td>
+    <td>8-9</td>
+    <td>8-9</td>
+    <td>8-2</td>
+    <td>Closed</td>
+    
+</tr>
+</table>
+
+
+        <script type="text/javascript">
+            //makinf form function
+            function validateForm()
+            {
+                var firstName = document.forms["messageForm"]["fname"].value;
+                var lastName = document.forms["messageForm"]["lname"].value;
+                var gender = document.forms["messageForm"]["genderDetails"].value;
+                var messageDetails = document.forms["messageForm"]["message"].value;
+
+                //alert(messageDetails);
+                if (firstName == "" || lastName == "" || messageDetails == "") 
+                {
+                    alert("Empty fields are present!!! Please enter the values...");
+                }
+
+                else
+                {
+                     alert("Thank you for your feedback!!!")
+                }
+            }
+        </script>
+  <br>
+  <br>
+    
+    </body>
+    <!--section for footer-->
+    <footer>
+        <div class="footer-here">
+          <p style="text-align: center;">©️ 2024 Sacho Basket Nepal, Inc. </p>
+          <!--prints the date-->
+          <p id="date"></p> 
+       <ul>
+        <li><a href="home.html">Your privacy|</a></li>
+        <li><a href="form.html">Form</a></li>
+        <li><a href="Research.html">|Research</a></li>
+       </ul>
+
+    <script type="text/javascript">
+        //javascript for current time by creating display function
+        	function display_date() 
+			{
+                //gets current time
+				document.getElementById('date').innerHTML = Date();
+				setTimeout(display_date,1000)
+			}
+
+           
+         display_date();
+         
+   
+    </script>
+   
+    </div>
+    </footer>
+</html>

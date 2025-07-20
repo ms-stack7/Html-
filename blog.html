@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--header section-->
+<head>
+    <title>Blog</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML5, CSS3 and JavaScript">
+    <meta name="Himani" content="Blog page">
+    <link rel="stylesheet" href="STYLE.css">
+    <!--Section for internal CSS-->
+    <style>
+    
+.title{
+    text-align: center;
+    color: yellowgreen;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    border: 3px solid green;
+   
+}
+.head{
+    text-align: center;
+    color: burlywood;
+}
+    </style>
+</head>
+
+
+
+<body>
+    <!--Section for navigation-->
+    <nav>
+        <div class="apple">
+            <a href="blog.html" >
+                 <img src="images/HOME/logo_transparent.png" class="logo" width="30%" height="110">
+            </a>
+        </div>
+      
+        <div class="navigation">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Product.html">Product</a> </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="Research.html">Research</a></li>
+            </ul>
+        </div>
+        <form>
+            <div class="search">
+                <span class="fa-solid fa-magnifying-glass"></span>
+                <input class="s-input" type="search" placeholder="Search">
+        </div>
+    </form>
+    </nav>
+    <!--Main body section here-->
+<h1 class="title">Welcome To Our Blog</h1>
+
+<section class="main">
+ <img src="images/HOME/logo_transparent.png" width="10%" height="100">
+    
+		
+
+<div>
+
+  <!--what technology is section-->
+    <h1 class="head">What is technology?</h1>
+    <p>
+        Technology is the practical application of scientific knowledge to improve human welfare. From the Greek word (techne) ,meaning art of artifice or craft, Technology means the act of making or crafting the scientific knowledge and properly using it to make  our everyday lives easy. It helps us to make a process simpler, easier or faster. Technology is the application of scientific knowledge made by human to make their day to day life easier and comfortable.it includes highly advanced things like computers, satelight, to small things like hammers and wheels.
+
+        Technology has been improving since the human civilization started. Technology has been rapidly changing  in each and every field.( Before the invention of telephone it was hard to communicate to others ,the process of sending message was time consuming but with the help of telephone we can directly communicate with others).This is the simple example how technology has improved in these years. Technology has been improved in the every sector, likewise ,it is easier and faster for us to buy   the grocery items directly from our home without visiting the shop with the help of Online Shooping.   
+        
+    </p>
+</div>
+<br>
+<div>
+    <!--How tech has affected us section-->
+    <h1 class="head">How has technology affected us?</h1>
+ <p>Technology has affected our life in both positive and negative ways. There are lots of work which requires much more time to be done by humans whereas technology does it within minute. But because of technology people are getting lazier and are relying on the technology. Technology has helped a lot in different sector like communication, transportation. With the help of technology we can book cabs, bike rides and go to our destination and we can talk to people living in different nation through facetime.
+    We can not say the technology has affected us in only  in a good way or only in a bad way  because Every thing as pros and cons and depends on how we use them and rely on them.</p>
+</div>
+<br>
+<div>
+    <!--positive impact section-->
+    <h1 class="head">Positive impacts of technology</h1>
+   <p>Technology has played positive and important  role for the development of the society and civilization. With the help of technology the way of living has been changed. Technology has helped us by making our daily life task easier. Technology had made an positive impact in every fields like , Healthcare, communication, education, economic growth, etc. In the business sector also technology has played an vital and positive role. People can easily use technology for the growth of their businesses. Technology has helped to improve the efficiency of completing the task. It has also changed the process of learning, technology has made the process of learning easier and faster.
+
+    Technology has played an important role in security and safety of human. People are very much safe and secured because of technology. In medical field new and modern way of treatment have been invented. The way of life have drastically changed. Nowadays people can easily promote their business without any cost. In Business field  digital marketing is taking place day by day. People can easily buy or sell any products with the help of online shooping. Technology has changed the structure of the society. Technology has changed the working mechanism of the society in an easy and modern way.
+    </p>
+</div>
+<br>
+<div>
+     <!--Negative impact section-->
+    <h1 class="head">Negative impacts of technology</h1>
+  <p>As technology has pros, it has cons too. Technology helps human in their day-to-day life but it is also making humans rely on it for all of their work. People nowadays are not using their creativity to do their stuff instead they are using technology to do the work faster and without any difficulties. So, it can be said as Technology kills Creativity. The youth of this generation are totally on internet and are not involved in socialization, they are not interested in physical games rather than that they like playing online games and keeps themselves isolated from the world .But Around the world students are using modern technology gadgets for studying. Student are more focused on internet rather than studies, which leads to decrement in the grades and also affect their physical and mental state. (Adewunmi Adeyemo, 2023)</p>
+</div>
+<br>
+
+<div>
+     <!--In conclusion section-->
+    <h1 class="head">In conclusion</h1>
+<p>All things considered, technology has had a significant impact on how we work, live, and engage with our daily activity.  </p>
+</div>
+<br>
+</section>
+</body>
+<!--Section for footer-->
+<footer>
+    <div class="footer-here">
+      <p style="text-align: center;">©️ 2024 Sacho Basket Nepal, Inc. </p>
+      <!--prints the date-->
+      <p id="date"></p> 
+   <ul>
+    <li><a href="home.html">Your privacy|</a></li>
+    <li><a href="form.html">Form</a></li>
+    <li><a href="Research.html">|Research</a></li>
+   </ul>
+
+<script type="text/javascript">
+    //javascript for current time by creating display function
+        function display_date() 
+        {
+            //gets current time
+            document.getElementById('date').innerHTML = Date();
+            setTimeout(display_date,1000)
+        }
+
+       
+     display_date();
+     
+
+</script>
+
+</div>
+</footer>
+
+</html>

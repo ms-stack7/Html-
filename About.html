@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+     <!--HEADER PART-->
+    <head>
+        <link rel="stylesheet" href="STYLE.css">
+        <title>About us</title>
+        <meta content="About us">
+        <meta charset="8">
+        <meta name="description" content="HTML5, CSS3 and JavaScript">
+        <meta name="keywords" content="About us">
+        <meta name="Manas" content="About Us">
+         <!--INTENRAL CSS HERE-->
+        <style>
+    .mainA{
+                display: flex;
+                flex-direction: ROW;
+                justify-content: space-between;
+   }
+ .column1{
+  display: flex;
+flex: 50%;
+flex-direction: column;
+text-align: center;
+
+            }
+.image{
+    text-align: center;
+    
+}
+.middle{
+    text-align: center;
+}
+.mission{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 30px;
+}
+
+    </style>
+    </head>
+    <body>
+           <!--Navigation bar SECTION-->
+        <nav>
+            <div class="apple">
+                <a href="About.html" >
+                     <img src="images/HOME/logo_transparent.png" class="logo" width="30%" height="110">
+                </a>
+            </div>
+          
+            <div class="navigation">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Product.html">Product</a> </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="Research.html">Research</a></li>
+                </ul>
+            </div>
+            <form>
+                <div class="search">
+                    <span class="fa-solid fa-magnifying-glass"></span>
+                    <input class="s-input" type="search" placeholder="Search">
+            </div>
+        </form>
+        </nav>
+        <!--Image Slider part for home page and some text-->
+
+<section class="image">
+<img src="images/About/Avocado.jpg" width="100%" height="500">
+
+<h4 style="text-align: center;">In 2019, we started off as the first local online shop in Nepal. Over the years, we have <br>diversified from a small online shop to an enterprise franchising the Nepali local brands,<br> nationally and internationally.</h4>
+</section>
+<section class="mission">
+<img src="images/About/Straw.jpg" width="50%" height="400">
+
+<p>
+  
+    Our mission is to provide authentic product to our customer for their<br> healthy and organic choices. We want to create awareness among the <br>customer about duplicacy, increasing day by day.<br>
+</p></section>
+<h2 class="middle"><ins> Meet our team<br> #teambasket</ins></h2>
+<!---Section for Pratik and Himani---->
+<section class="mainA">
+    <div class="column1">
+<a href="images/About/pratik cv.png"><img src="images/About/PL.jpg" alt="pratik" width="400" height="400" ></a>
+<br>
+<h3>Pratik Luintel</h3><br><p>Team leader somehow</p>
+<br>
+
+    </div>
+    <div class="column1">
+        <a href="images/About/himani cv.png"> <img src="images/About/H.jpg" alt="" width="400" height="400" ></a>
+         <br>
+         <h3>Himani Shriwastav</h3><br><p>Real team leader</p>
+             </div>
+    
+</section>  
+<br><br>
+<!---Section for manas and amit---->
+<section class="mainA">
+    <div class="column1">
+        <a href="images/About/manas cv.jpg"><img src="images/About/M.jpg" alt="Manas" width="400" height="400" ></a>
+        <br>
+<h3>Manas Silwal</h3><br><p>Always chilling through the air</p>
+    </div>
+            <div class="column1">
+                <a href="images/About/amit cv.png"><img src="images/About/A.jpg" alt="" width="400" height="400" ></a>
+                <br>
+        <h3>Amit Karki</h3><br><p>Too cool for school</p>
+            </div>
+        </section>
+     <br>
+            
+    </body>
+    <!--Section for Footer-->
+    <footer>
+        <div class="footer-here">
+          <p style="text-align: center;">©️ 2024 Sacho Basket Nepal, Inc. </p>
+          <!--prints the date-->
+          <p id="date"></p> 
+       <ul>
+        <li><a href="home.html">Your privacy|</a></li>
+        <li><a href="form.html">Form</a></li>
+        <li><a href="Research.html">|Research</a></li>
+       </ul>
+
+    <script type="text/javascript">
+        //javascript for current time by creating display function
+        	function display_date() 
+			{
+                //gets current time
+				document.getElementById('date').innerHTML = Date();
+				setTimeout(display_date,1000)
+			}
+
+           
+         display_date();
+         
+   
+    </script>
+   
+    </div>
+    </footer>
+    </html>
